@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Second lesson js</title>
+    </head>
+    <body>
+        <h1>Second lesson</h1>
+        <script>
+            //first task
+            let number = +prompt('enter your number', 0);
+            if (number > 0) {
+                alert(1);
+            } else if (number < 0) {
+                alert(-1);
+            } else if (number === 0) {
+                alert(0);
+            } else {
+                number = prompt('enter your number again', 0);
+            }
+            //second task
+            let name = prompt("Who`s there?");
+            if (name === "Admin") {
+                let password = prompt("Password?");
+                if (password === "TheMaster") {
+                    alert("Welcome!");
+                } else if (password === null) {
+                    alert("Canceled.");
+                } else {
+                    alert("Wrong password");
+                }
+            } else if (name === null) {
+                alert("Canceled.");
+            } else {
+                alert("I don`t know you");
+            }
+        </script>
+    </body>
+</html>
